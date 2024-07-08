@@ -1,0 +1,30 @@
+body{
+    margin: 0%;
+}
+nav{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    height: 9vh;
+}
+.titulo{
+    margin: 2vw;
+}
+.parte-superior{
+    display: inline-flex;
+}
+.lista{
+    list-style: none;
+    display: inline-flex;
+    margin-right: 3vw;
+}
+.buscador{
+    width: 20vw;
+    height: 4vh;
+    border-radius: 0.5vw;
+    border-color: gray;
+    border-style: solid;
+    border-width: 0.175vw;
+}
