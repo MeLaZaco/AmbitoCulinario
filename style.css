@@ -8,9 +8,19 @@ nav{
     display: flex;
     justify-content: space-between;
     height: 9vh;
+    align-items: center;
+}
+.IT{
+    display: flex;
+    align-items: center;
+}
+.fotito-superior{
+    width: 6vw;
+    height: 9vh;
 }
 .titulo{
     margin: 2vw;
+    font-size: 1.5vw;
 }
 .parte-superior{
     display: inline-flex;
@@ -26,7 +36,7 @@ nav{
     border-radius: 0.5vw;
     border-color: rgb(201, 201, 201);
     border-style: solid;
-    border-width: 0.175vw;
+    border-width: 0.105vw;
     background-color: black;
 }
 ::-webkit-input-placeholder { color: rgb(201, 201, 201); } /* WebKit */
