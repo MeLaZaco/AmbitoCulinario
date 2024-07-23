@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Flask/Flask/static/css/style.css">
+    <script src="{{ url_for('static',filename='/js/app.js') }}"></script>
+</head>
+<body>
+    <nav class="parte-superior">
+        <div class="IT">
+            <img class="fotito-superior" src="/Flask/Flask/static/imgs/logo.png">
+            <h1 class="titulo">Ambito Culinario</h1>
+        </div>
+        <div>
+            <ul class="listado-superior">
+                <li class="lista">
+                    <form>
+                        <input type="search" id="gsearch" name="gsearch" class="buscador"
+                            placeholder="&#128269;  Buscar Productos...">
+                    </form>
+                </li>
+                <li class="lista">
+                    <p>Registro</p>
+                </li>
+                <li class="lista">
+                    <p>Inicio</p>
+                </li>
+                <li class="lista">
+                    <img src="" alt="carrito">
+                </li>
+                <li class="lista">
+                    <img src="" alt="favorito">
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="carrusel">
+        <div class="carrusel-inner">
+            <div class="carrusel-item active">
+                <img src="/Flask/Flask/static/imgs/imagenotfound.jpg" alt="Imagen 1">
+            </div>
+            <div class="carrusel-item">
+                <img src="/Flask/Flask/static/imgs/imagenotfound.jpg" alt="Imagen 2">
+            </div>
+            <div class="carrusel-item">
+                <img src="/Flask/Flask/static/imgs/imagenotfound.jpg" alt="Imagen 3">
+            </div>
+        </div>
+        <button class="carrusel-control prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="carrusel-control next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <div>
+        
+    </div>
+</body>
+
+</html>
