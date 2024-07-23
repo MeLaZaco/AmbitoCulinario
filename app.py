@@ -1,4 +1,4 @@
-from Flask import Flask, render_template
+from AmbitoCulinario import Flask, render_template
 from models.tareas import Tarea
 
 app = Flask(__name__)
