@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from Flask import Flask, render_template
 from models.tareas import Tarea
 
 app = Flask(__name__)
