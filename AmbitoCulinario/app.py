@@ -1,12 +1,10 @@
 from AmbitoCulinario import Flask, render_template
-from models.tareas import Tarea
 
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def index():
-    tareas = Tarea.get_all()
-    return render_template('index.html', tareas=tareas)
+    return render_template('index.html')
 
 @app.route('/', methods=['POST'])
 def hello_world_post():
