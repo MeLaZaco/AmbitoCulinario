@@ -18,12 +18,14 @@ nav {
     align-items: center;
 }
 
+
 .fotito-superior {
     width: 7vw;
 }
 
 .titulo {
     font-size: 1.7vw;
+    cursor: pointer;
 }
 
 .parte-superior {
@@ -39,6 +41,7 @@ nav {
 .lista p {
     font-size: 1.085vw;
     color: #c6c6c3;
+    cursor: pointer;
 }
 
 .buscador {
@@ -57,12 +60,9 @@ nav {
     color: #c6c6c3;
 }
 
-/* WebKit */
 ::-moz-placeholder {
     color: #303036;
 }
-
-/* Firefox 19+ */
 
 .carrusel {
     position: relative;
