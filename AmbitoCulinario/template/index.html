@@ -11,29 +11,55 @@
 
 <body>
     <nav class="parte-superior">
-        <div class="IT">
-            <img class="fotito-superior" src="/AmbitoCulinario/static/imgs/logo.png">
-            <h1 class="titulo">Ambito Culinario</h1>
+        <div class="superior-top">
+            <div class="IT">
+                <img class="fotito-superior" src="/AmbitoCulinario/static/imgs/logo.png">
+                <h1 class="titulo"><a href="/AmbitoCulinario/template/index.html">Ambito Culinario</a></h1>
+            </div>
+            <div>
+                <ul class="listado-superior">
+                    <li class="lista">
+                        <form>
+                            <input type="search" id="gsearch" name="gsearch" class="buscador"
+                                placeholder="&#128269;  Buscar Productos...">
+                        </form>
+                    </li>
+                    <li class="lista">
+                        <p>Registro</p>
+                    </li>
+                    <li class="lista">
+                        <p>Inicio</p>
+                    </li>
+                    <li class="lista">
+                        <img src="" alt="carrito">
+                    </li>
+                    <li class="lista">
+                        <img src="" alt="favorito">
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <ul class="listado-superior">
-                <li class="lista">
-                    <form>
-                        <input type="search" id="gsearch" name="gsearch" class="buscador"
-                            placeholder="&#128269;  Buscar Productos...">
-                    </form>
+        <div class="superior-bottom">
+            <ul>
+                <li>
+                    <a>
+                        ?
+                    </a>
                 </li>
-                <li class="lista">
-                    <p>Registro</p>
+                <li>
+                    <a>
+                        ?
+                    </a>
                 </li>
-                <li class="lista">
-                    <p>Inicio</p>
+                <li>
+                    <a>
+                        ?
+                    </a>
                 </li>
-                <li class="lista">
-                    <img src="" alt="carrito">
-                </li>
-                <li class="lista">
-                    <img src="" alt="favorito">
+                <li>
+                    <a>
+                        ?
+                    </a>
                 </li>
             </ul>
         </div>
@@ -41,13 +67,13 @@
     <div class="carrusel">
         <div class="carrusel-inner">
             <div class="carrusel-item active">
-                <img src="/AmbitoCulinario/static/imgs/imagenotfound.jpg">
+                <img class="img-carrusel" src="/AmbitoCulinario/static/imgs/imagenotfound (5).jpg">
             </div>
             <div class="carrusel-item">
-                <img src="/AmbitoCulinario/static/imgs/imagenotfound.jpg">
+                <img class="img-carrusel" src="/AmbitoCulinario/static/imgs/imagenotfound (5).jpg">
             </div>
             <div class="carrusel-item">
-                <img src="/AmbitoCulinario/static/imgs/imagenotfound.jpg">
+                <img class="img-carrusel" src="/AmbitoCulinario/static/imgs/imagenotfound (5).jpg">
             </div>
         </div>
         <button class="carrusel-control prev" onclick="moveSlide(-1)">&#10094;</button>
@@ -58,7 +84,7 @@
         </h1>
         <div>
             <ul>
-                <li></li    >
+                <li></li>
                 <li></li>
                 <li></li>
                 <li></li>
