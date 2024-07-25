@@ -6,6 +6,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/index.html/', methods=['GET'])
+def producto():
+    return render_template('producto.html')
+
 @app.route('/', methods=['POST'])
 def hello_world_post():
     return 'Hello, World! POST'
