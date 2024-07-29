@@ -254,10 +254,23 @@ nav {
     font-size: 1.3vw;
 }
 
-footer {
+.footer1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.footer1 h1 {
+    max-width: 50%;
+        word-wrap: break-word;
+        font-size: 1.5vw;
+}
+
+.footer2 {
     background-color: #303036;
     display: flex;
     justify-content: center;
     color: white;
     font-size: 0.75vw;
 }
+
