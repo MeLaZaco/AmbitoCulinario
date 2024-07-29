@@ -156,6 +156,7 @@ nav {
 
 .listado3 li {
     list-style: none;
+    grid-template-columns: repeat(5, 50px 1fr) 100px;
 }
 
 .producto__img {
