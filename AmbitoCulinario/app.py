@@ -1,12 +1,13 @@
-from AmbitoCulinario import Flask, render_template
+from flask import Flask, render_template
+from models.ambitoculinario import ambitoculinarios
 
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def index():
-    search = request.args.get('search')
-    if search:
-        print("search parameter: " + search)
+    #search = request.args.get('search')
+    #if search:
+        #print("search parameter: " + search)
 
     return render_template('index.html')
 

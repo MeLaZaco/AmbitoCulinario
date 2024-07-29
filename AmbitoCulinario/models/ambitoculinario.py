@@ -9,7 +9,7 @@ class ambitoculinarios:
     # ahora usamos métodos de clase para consultar nuestra base de datos
     @classmethod
     def get_all(cls):
-        query = "SELECT * FROM tareas;"
+        query = "SELECT * FROM ambitoculinario;"
         # asegúrate de llamar a la función connectToMySQL con el esquema al que te diriges
         results = connectToMySQL('ambitoculinario').query_db(query)
         # crear una lista vacía para agregar nuestras instancias de friends
