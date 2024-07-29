@@ -1,110 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="/AmbitoCulinario/static/css/style.css">
-        <script src="/AmbitoCulinario/static/js/app.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/AmbitoCulinario/static/css/style.css">
+    <script src="/AmbitoCulinario/static/js/app.js"></script>
+</head>
 
-    <body>
-        <nav class="parte-superior">
-            <div class="superior-top">
-                <div class="IT">
-                    <img class="fotito-superior"
-                        src="/AmbitoCulinario/static/imgs/logo.png">
-                    <h1 class="titulo"><a href="/AmbitoCulinario/template/index.html">Ambito Culinario</a></h1>
-                </div>
-                <div>
-                    <ul class="listado-superior">
-                        <li class="lista">
-                            <form>
-                                <input type="search" id="gsearch" name="gsearch"
-                                    class="buscador"
-                                    placeholder="&#128269;  Buscar Productos...">
-                            </form>
-                        </li>
-                        <li class="lista">
-                            <p>Registro</p>
-                        </li>
-                        <li class="lista">
-                            <p>Inicio</p>
-                        </li>
-                        <li class="lista">
-                            <img src alt="carrito">
-                        </li>
-                        <li class="lista">
-                            <img src alt="favorito">
-                        </li>
-                    </ul>
-                </div>
+<body>
+    <nav class="parte-superior">
+        <div class="superior-top">
+            <div class="IT">
+                <img class="fotito-superior" src="/AmbitoCulinario/static/imgs/logo.png">
+                <h1 class="titulo"><a href="/AmbitoCulinario/template/index.html">Ambito Culinario</a></h1>
             </div>
-            <div class="superior-bottom">
-                <ul>
-                    <li>
-                        <a>
-                            Ofertas
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            ?
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            ?
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            ?
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="carrusel">
-            <div class="carrusel-inner">
-                <div class="carrusel-item active">
-                    <img class="img-carrusel"
-                        src="/AmbitoCulinario/static/imgs/imagenotfound (5).jpg">
-                </div>
-                <div class="carrusel-item">
-                    <img class="img-carrusel"
-                        src="/AmbitoCulinario/static/imgs/imagenotfound (5).jpg">
-                </div>
-                <div class="carrusel-item">
-                    <img class="img-carrusel"
-                        src="/AmbitoCulinario/static/imgs/imagenotfound (5).jpg">
-                </div>
-            </div>
-            <button class="carrusel-control prev"
-                onclick="moveSlide(-1)">&#10094;</button>
-            <button class="carrusel-control next"
-                onclick="moveSlide(1)">&#10095;</button>
-        </div>
-        <section>
-            <h1>
-            </h1>
             <div>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <ul class="listado-superior">
+                    <li class="lista">
+                        <form>
+                            <input type="search" id="gsearch" name="gsearch" class="buscador"
+                                placeholder="&#128269;  Buscar Productos...">
+                        </form>
+                    </li>
+                    <li class="lista">
+                        <p>Registro</p>
+                    </li>
+                    <li class="lista">
+                        <p>Inicio</p>
+                    </li>
+                    <li class="lista">
+                        <img src alt="carrito">
+                    </li>
+                    <li class="lista">
+                        <img src alt="favorito">
+                    </li>
                 </ul>
-                <!--Repetir fila unas cuantas veces-->
             </div>
-        </section>
-        <article>
+        </div>
+        <div class="superior-bottom">
+            <ul class="listado-superior-bottom">
+                <li class="lista2">
+                    <a>
+                        Ofertas
+                    </a>
+                </li>
+                <li class="lista2">
+                    <a>
+                        ?
+                    </a>
+                </li>
+                <li class="lista2">
+                    <a>
+                        ?
+                    </a>
+                </li>
+                <li class="lista2">
+                    <a>
+                        ?
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="carrusel">
+        <div class="carrusel-inner">
+            <div class="carrusel-item active">
+                <img class="img-carrusel" src="/AmbitoCulinario/static/imgs/imagenotfound (5).jpg">
+            </div>
+            <div class="carrusel-item">
+                <img class="img-carrusel" src="/AmbitoCulinario/static/imgs/imagenotfound (5).jpg">
+            </div>
+            <div class="carrusel-item">
+                <img class="img-carrusel" src="/AmbitoCulinario/static/imgs/imagenotfound (5).jpg">
+            </div>
+        </div>
+        <button class="carrusel-control prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="carrusel-control next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <section class="inferior">
+        <div class="inferior-top">
+            <h1 class="destacados">Utensilios destacados</h1>
+            <p>Ver todo</p>
+        </div>
+        <div>
+            <ul class="listado3">
+                <li>
+                    <img src="/AmbitoCulinario/static/imgs/imagenotfound.jpg" class="producto__img">
+                    <div class="productDescription">
+                        <h3 class="produto__title">Producto 1</h3>
+                        <span class="produto__price">$90.00</span>
+                    </div>
+                    <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
+                </li>
+                <li>
+                    <img src="/AmbitoCulinario/static/imgs/imagenotfound.jpg"  class="producto__img">
+                    <div class="productDescription">
+                        <h3 class="produto__title">Producto 1</h3>
+                        <span class="produto__price">$90.00</span>
+                    </div>
+                    <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
+                </li>
+                <li>
+                    <img src="/AmbitoCulinario/static/imgs/imagenotfound.jpg" alt="Producto 1" class="producto__img">
+                    <div class="productDescription">
+                        <h3 class="produto__title">Producto 1</h3>
+                        <span class="produto__price">$90.00</span>
+                    </div>
+                    <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
+                </li>
+                <li>
+                    <img src="/AmbitoCulinario/static/imgs/imagenotfound.jpg" alt="Producto 1" class="producto__img">
+                    <div class="productDescription">
+                        <h3 class="produto__title">Producto 1</h3>
+                        <span class="produto__price">$90.00</span>
+                    </div>
+                    <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
+                </li>
+            </ul>
+            <!--Repetir fila unas cuantas veces-->
+        </div>
+    </section>
+    <article>
 
-        </article>
-        <footer>
+    </article>
+    <footer>
 
-        </footer>
-    </body>
+    </footer>
+</body>
 
 </html>
