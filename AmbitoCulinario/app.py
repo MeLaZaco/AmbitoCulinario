@@ -11,7 +11,7 @@ def index():
 
     return render_template('index.html')
 
-@app.route('/index.html/', methods=['GET'])
+@app.route('/producto.html/', methods=['GET'])
 def producto():
     return render_template('producto.html')
 

@@ -3,6 +3,11 @@ body {
     background-color: #303036;
 }
 
+.body2 {
+    margin: 0%;
+    background-color: black;
+}
+
 nav {
     background-color: black;
     color: white;
@@ -87,8 +92,9 @@ nav {
 }
 
 .carrusel {
+    margin: 3%;
     position: relative;
-    width: 99.75%;
+    width: 94%;
     min-width: 300px;
     min-height: 125px;
     overflow: hidden;
@@ -156,10 +162,102 @@ nav {
 
 .listado3 li {
     list-style: none;
-    grid-template-columns: repeat(5, 50px 1fr) 100px;
+    border-radius: 5%;
 }
 
 .producto__img {
     width: 80%;
     max-width: 600px;
+    border-radius: 5%;
 }   
+
+.orden-img-info {
+    display: flex;
+    margin: 4%;
+}
+
+.relacion-productos {
+    display: flex;
+    list-style: none;
+}
+
+.orden-img-info div h1 {
+    margin: 0%;
+    font-size: 2.75vw;
+}
+
+.orden-img-info div img {
+    width: 50vw;
+    height: 100%;
+}
+
+.informacion-producto {
+    margin-left: 3%;
+    max-width: 39vw;
+}
+
+.informacion {
+    font-size: 100%;
+    max-width: 80%;
+    word-wrap: break-word;
+    margin-bottom: 7.5%;
+    margin-top: 5%;
+}
+
+.informacion-adicional {
+    font-size: 1vw;
+    max-width: 50%;
+    word-wrap: break-word;
+    margin: 0%;
+    margin-bottom: 7.5%;
+}
+
+.porcentaje {
+    font-size: 1.25vw;
+    max-width: 100%;
+    word-wrap: break-word;
+    margin: 0%;
+    margin-bottom: 7.5%;
+
+}
+
+.precio {
+    margin: 0%;
+    font-size: 2vw;
+}
+
+.especificaciones {
+    margin-bottom: 0%;
+}
+
+.I-A {
+    margin-top: 7%;
+    margin-bottom: 2%;
+}
+
+.Agregar-a-carrito {
+    font-size: 1vw;
+    width: 100%;
+    color: black;
+    background-color: white;
+    padding: 1.75%;
+    border-style: hidden;
+    border-radius: 0.5vw;
+}
+
+.P-R {
+    margin: 2.5%;
+    font-size: 1.5vw;
+}
+
+.productDescription {
+    font-size: 1.3vw;
+}
+
+footer {
+    background-color: #303036;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 0.75vw;
+}
