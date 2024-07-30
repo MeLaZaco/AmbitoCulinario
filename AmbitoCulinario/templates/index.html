@@ -62,11 +62,11 @@
         </div>
         <div>
             <ul class="listado3">
+                {% for friend in friends%}
                 <li>
-                    <img href="{{producto.imagen_producto}}" class="producto__img" alt="">
+                    <img src="{{url_for('static',filename='/imgs/' + friend.imagen)}}" class="producto__img" alt="">
                     <div class="productDescription">
-                        <h3 class="produto__title">Producto
-                            1</a></h3>
+                        <h3 class="produto__title"></a></h3>
                         <span class="produto__price">$90.000</span>
                     </div>
                     <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
@@ -97,6 +97,7 @@
                     </div>
                     <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
                 </li>
+                {% endfor %}
             </ul>
             <ul class="listado3">
                 <li>

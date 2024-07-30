@@ -15,8 +15,12 @@ def index():
 
 @app.route('/', methods=['GET'])
 def producto(productoID):
-    producto = Producto.get_producto(productoID)
+    producto = Producto.get_producto(productoID )
     return render_template("index.html", producto=producto[0])
+
+@app.route('/producto.html/', methods=['GET'])
+def info():
+    return render_template("producto.html")
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=8080)
