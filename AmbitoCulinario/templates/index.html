@@ -41,34 +41,10 @@
                 </ul>
             </div>
         </div>
-        <div class="superior-bottom">
-            <ul class="listado-superior-bottom">
-                <li class="lista2">
-                    <a>
-                        Ofertas
-                    </a>
-                </li>
-                <li class="lista2">
-                    <a>
-                        ?
-                    </a>
-                </li>
-                <li class="lista2">
-                    <a>
-                        ?
-                    </a>
-                </li>
-                <li class="lista2">
-                    <a>
-                        ?
-                    </a>
-                </li>
-            </ul>
-        </div>
         <div class="carrusel">
             <div class="carrusel-inner">
                 <div class="carrusel-item active">
-                    <img class="img-carrusel" src="{{ambitoculinarios.imagen_producto}}">
+                    <img class="img-carrusel" src="{{url_for('static',filename='/imgs/imagenotfound (5).jpg')}}">
                 </div>
                 <div class="carrusel-item">
                     <img class="img-carrusel" src="{{url_for('static',filename='/imgs/imagenotfound (5).jpg')}}">
@@ -87,7 +63,7 @@
         <div>
             <ul class="listado3">
                 <li>
-                    <img src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}" class="producto__img">
+                    <img href="{{producto.imagen_producto}}" class="producto__img" alt="">
                     <div class="productDescription">
                         <h3 class="produto__title">Producto
                             1</a></h3>

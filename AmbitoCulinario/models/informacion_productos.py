@@ -1,7 +1,7 @@
 # importar la función que devolverá una instancia de una conexión
 from config.db import connectToMySQL
 # modelar la clase después de la tabla friend de nuestra base de datos
-class informacion_producto:
+class Producto:
     def __init__( self , data ):
         self.id_informacion_producto = data["id_informacion_producto"]
         self.imagen_producto = data["imagen_producto"]
@@ -33,8 +33,17 @@ class informacion_producto:
         return friends
     
     @classmethod
+    def get_producto(cls, id_informacion_producto):
+        query = f"SELECT * FROM informacion_productos WHERE id_informacion_producto = " + id_informacion_producto + ";"
+        results = connectToMySQL('ambitoculinario').query_db(query)
+        productitos = []
+        for result in results:
+            productitos.append(cls(result))
+        return productitos
+
+    @classmethod
     def get_all_filter(cls, search_term):
-        query = f"SELECT * FROM informacio_producto WHERE nombre LIKE '%{search_term}%';"
+        query = f"SELECT * FROM informacio_productos WHERE nombre LIKE '%{search_term}%';"
         results = connectToMySQL('ambitoculinario').query_db(query)
         productitos = []
         for result in results:

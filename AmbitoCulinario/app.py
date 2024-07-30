@@ -1,25 +1,22 @@
-from flask import Flask, render_template
-from models.informacion_producto import informacion_producto
+from flask import Flask, render_template, request
+from models.informacion_productos import Producto
 
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def index():
-    #search = request.args.get('search') 
-    #if search:
-       # print("search parameter: " + search)
-      #  gatos = informacion_producto.get_all_filter(search)
-   # else:
-      #  gatos = informacion_producto.get_all()
-    return render_template("index.html", informacion_producto=informacion_producto)
+    search = request.args.get('search') 
+    if search:
+        print("search parameter: " + search)
+        informacion_productos = Producto.get_all_filter(search)
+    else:
+        informacion_productos = Producto.get_all()
+    return render_template("index.html", informacion_productos=informacion_productos)
 
 @app.route('/', methods=['GET'])
-def producto():
-    return render_template('producto.html')
-
-@app.route('/', methods=['POST'])
-def hello_world_post():
-    return 'Hello, World! POST'
+def producto(productoID):
+    producto = Producto.get_producto(productoID)
+    return render_template("index.html", producto=producto[0])
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=8080)
