@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 from models.informacion_productos import Producto
 
 app = Flask(__name__)
