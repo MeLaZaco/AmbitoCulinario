@@ -1,17 +1,19 @@
 from flask import Flask, render_template
-from models.ambitoculinario import ambitoculinarios
+from models.informacion_producto import informacion_producto
 
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def index():
-    #search = request.args.get('search')
-    #if search:
-        #print("search parameter: " + search)
+    search = request.args.get('search') 
+    if search:
+        print("search parameter: " + search)
+        gatos = Gato.get_all_filter(search)
+    else:
+        gatos = Gato.get_all()
+    return render_template("index.html", gatos=gatos, search=search)
 
-    return render_template('index.html')
-
-@app.route('/producto.html/', methods=['GET'])
+@app.route('/', methods=['GET'])
 def producto():
     return render_template('producto.html')
 

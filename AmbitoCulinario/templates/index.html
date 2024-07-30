@@ -1,248 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet"
-            href="{{url_for('static',filename='/css/style.css')}}">
-        <script src="{{ url_for('static',filename='/js/app.js') }}"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='/css/style.css')}}">
+    <script src="{{ url_for('static',filename='/js/app.js') }}"></script>
+</head>
 
-    <body>
-        <nav class="parte-superior">
-            <div class="superior-top">
-                <div class="IT">
-                    <img class="fotito-superior"
-                        src="{{ url_for('static',filename='/imgs/logo.png') }}">
-                    <h1 class="titulo"><a
-                            href="/index.html">Ambito
-                            Culinario</a></h1>
-                </div>
-                <div>
-                    <ul class="listado-superior">
-                        <li class="lista">
-                            <form action="" method="get">
-                                <input type="search" id="gsearch" name="gsearch"
-                                    class="buscador"
-                                    placeholder="  Buscar Productos...">
-                                <button type="submit">Buscar</button>
-                            </form>
-                        </li>
-                        <li class="lista">
-                            <p>Registro</p>
-                        </li>
-                        <li class="lista">
-                            <p>Inicio</p>
-                        </li>
-                        <li class="lista">
-                            <img src alt="carrito">
-                        </li>
-                        <li class="lista">
-                            <img src alt="favorito">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="superior-bottom">
-                <ul class="listado-superior-bottom">
-                    <li class="lista2">
-                        <a>
-                            Ofertas
-                        </a>
-                    </li>
-                    <li class="lista2">
-                        <a>
-                            ?
-                        </a>
-                    </li>
-                    <li class="lista2">
-                        <a>
-                            ?
-                        </a>
-                    </li>
-                    <li class="lista2">
-                        <a>
-                            ?
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="carrusel">
-                <div class="carrusel-inner">
-                    <div class="carrusel-item active">
-                        <img class="img-carrusel"
-                            src="{{url_for('static',filename='/imgs/imagenotfound (5).jpg')}}">
-                    </div>
-                    <div class="carrusel-item">
-                        <img class="img-carrusel"
-                            src="{{url_for('static',filename='/imgs/imagenotfound (5).jpg')}}">
-                    </div>
-                    <div class="carrusel-item">
-                        <img class="img-carrusel"
-                            src="{{url_for('static',filename='/imgs/imagenotfound (5).jpg')}}">
-                    </div>
-                </div>
-                <button class="carrusel-control prev"
-                    onclick="moveSlide(-1)">&#10094;</button>
-                <button class="carrusel-control next"
-                    onclick="moveSlide(1)">&#10095;</button>
-            </div>
-            <div class="inferior-top">
-                <h1 class="destacados">Utensilios destacados</h1>
-                <p>Ver todo</p>
+<body>
+    <nav class="parte-superior">
+        <div class="superior-top">
+            <div class="IT">
+                <img class="fotito-superior" src="{{ url_for('static',filename='/imgs/logo.png') }}">
+                <h1 class="titulo"><a href="/index.html">Ambito
+                        Culinario</a></h1>
             </div>
             <div>
-                <ul class="listado3">
-                    <li>
-                        <img
-                            src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
-                            class="producto__img">
-                        <div class="productDescription">
-                            <h3 class="produto__title">Producto
-                                    1</a></h3>
-                            <span class="produto__price">$90.000</span>
-                        </div>
-                        <a href="#"><i
-                                class="produto__icon fas fa-cart-plus"></i></a>
+                <ul class="listado-superior">
+                    <li class="lista">
+                        <form action="" method="get">
+                            <input type="search" id="gsearch" name="gsearch" class="buscador"
+                                placeholder="  Buscar Productos...">
+                            <button type="submit">Buscar</button>
+                        </form>
                     </li>
-                    <li>
-                        <img
-                            src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
-                            class="producto__img">
-                        <div class="productDescription">
-                            <h3 class="produto__title">Producto 1</h3>
-                            <span class="produto__price">$90.000</span>
-                        </div>
-                        <a href="#"><i
-                                class="produto__icon fas fa-cart-plus"></i></a>
+                    <li class="lista">
+                        <p>Registro</p>
                     </li>
-                    <li>
-                        <img
-                            src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
-                            alt="Producto 1" class="producto__img">
-                        <div class="productDescription">
-                            <h3 class="produto__title">Producto 1</h3>
-                            <span class="produto__price">$90.000</span>
-                        </div>
-                        <a href="#"><i
-                                class="produto__icon fas fa-cart-plus"></i></a>
+                    <li class="lista">
+                        <p>Inicio</p>
                     </li>
-                    <li>
-                        <img
-                            src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
-                            alt="Producto 1" class="producto__img">
-                        <div class="productDescription">
-                            <h3 class="produto__title">Producto 1</h3>
-                            <span class="produto__price">$90.000</span>
-                        </div>
-                        <a href="#"><i
-                                class="produto__icon fas fa-cart-plus"></i></a>
+                    <li class="lista">
+                        <img src alt="carrito">
                     </li>
-                </ul>
-                <ul class="listado3">
-                    <li>
-                        <img
-                            src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
-                            class="producto__img">
-                        <div class="productDescription">
-                            <h3 class="produto__title">Producto 1</h3>
-                            <span class="produto__price">$90.000</span>
-                        </div>
-                        <a href="#"><i
-                                class="produto__icon fas fa-cart-plus"></i></a>
-                    </li>
-                    <li>
-                        <img
-                            src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
-                            class="producto__img">
-                        <div class="productDescription">
-                            <h3 class="produto__title">Producto 1</h3>
-                            <span class="produto__price">$90.000</span>
-                        </div>
-                        <a href="#"><i
-                                class="produto__icon fas fa-cart-plus"></i></a>
-                    </li>
-                    <li>
-                        <img
-                            src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
-                            alt="Producto 1" class="producto__img">
-                        <div class="productDescription">
-                            <h3 class="produto__title">Producto 1</h3>
-                            <span class="produto__price">$90.000</span>
-                        </div>
-                        <a href="#"><i
-                                class="produto__icon fas fa-cart-plus"></i></a>
-                    </li>
-                    <li>
-                        <img
-                            src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
-                            alt="Producto 1" class="producto__img">
-                        <div class="productDescription">
-                            <h3 class="produto__title">Producto 1</h3>
-                            <span class="produto__price">$90.000</span>
-                        </div>
-                        <a href="#"><i
-                                class="produto__icon fas fa-cart-plus"></i></a>
-                    </li>
-                </ul>
-                <ul class="listado3">
-                    <li>
-                        <img
-                            src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
-                            class="producto__img">
-                        <div class="productDescription">
-                            <h3 class="produto__title">Producto 1</h3>
-                            <span class="produto__price">$90.000</span>
-                        </div>
-                        <a href="#"><i
-                                class="produto__icon fas fa-cart-plus"></i></a>
-                    </li>
-                    <li>
-                        <img
-                            src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
-                            class="producto__img">
-                        <div class="productDescription">
-                            <h3 class="produto__title">Producto 1</h3>
-                            <span class="produto__price">$90.000</span>
-                        </div>
-                        <a href="#"><i
-                                class="produto__icon fas fa-cart-plus"></i></a>
-                    </li>
-                    <li>
-                        <img
-                            src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
-                            alt="Producto 1" class="producto__img">
-                        <div class="productDescription">
-                            <h3 class="produto__title">Producto 1</h3>
-                            <span class="produto__price">$90.00</span>
-                        </div>
-                        <a href="#"><i
-                                class="produto__icon fas fa-cart-plus"></i></a>
-                    </li>
-                    <li>
-                        <img
-                            src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
-                            alt="Producto 1" class="producto__img">
-                        <div class="productDescription">
-                            <h3 class="produto__title">Producto 1</h3>
-                            <span class="produto__price">$90.00</span>
-                        </div>
-                        <a href="#"><i
-                                class="produto__icon fas fa-cart-plus"></i></a>
+                    <li class="lista">
+                        <img src alt="favorito">
                     </li>
                 </ul>
             </div>
-        </nav>
-        <footer class="footer1">
-            <h1>
-                OBJETIVO
-            </h1>
-            <p>
-                Buscamos que la gente compre los mejores utensilios de cocina de la mejor calidad en la región metropolitana para luego expandirnos, productos accesibles y duraderos sin llegar a ser inservibles para los usuarios con menos dinero, demostrar la información del producto para que los usuarios para que no tengan dudas en su compra.
-            </p>
-        </footer>
-    </body>
+        </div>
+        <div class="superior-bottom">
+            <ul class="listado-superior-bottom">
+                <li class="lista2">
+                    <a>
+                        Ofertas
+                    </a>
+                </li>
+                <li class="lista2">
+                    <a>
+                        ?
+                    </a>
+                </li>
+                <li class="lista2">
+                    <a>
+                        ?
+                    </a>
+                </li>
+                <li class="lista2">
+                    <a>
+                        ?
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="carrusel">
+            <div class="carrusel-inner">
+                <div class="carrusel-item active">
+                    <img class="img-carrusel" src="{{ambitoculinarios.imagen_producto}}">
+                </div>
+                <div class="carrusel-item">
+                    <img class="img-carrusel" src="{{url_for('static',filename='/imgs/imagenotfound (5).jpg')}}">
+                </div>
+                <div class="carrusel-item">
+                    <img class="img-carrusel" src="{{url_for('static',filename='/imgs/imagenotfound (5).jpg')}}">
+                </div>
+            </div>
+            <button class="carrusel-control prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="carrusel-control next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="inferior-top">
+            <h1 class="destacados">Utensilios destacados</h1>
+            <p>Ver todo</p>
+        </div>
+        <div>
+            <ul class="listado3">
+                <li>
+                    <img src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}" class="producto__img">
+                    <div class="productDescription">
+                        <h3 class="produto__title">Producto
+                            1</a></h3>
+                        <span class="produto__price">$90.000</span>
+                    </div>
+                    <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
+                </li>
+                <li>
+                    <img src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}" class="producto__img">
+                    <div class="productDescription">
+                        <h3 class="produto__title">Producto 1</h3>
+                        <span class="produto__price">$90.000</span>
+                    </div>
+                    <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
+                </li>
+                <li>
+                    <img src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}" alt="Producto 1"
+                        class="producto__img">
+                    <div class="productDescription">
+                        <h3 class="produto__title">Producto 1</h3>
+                        <span class="produto__price">$90.000</span>
+                    </div>
+                    <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
+                </li>
+                <li>
+                    <img src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}" alt="Producto 1"
+                        class="producto__img">
+                    <div class="productDescription">
+                        <h3 class="produto__title">Producto 1</h3>
+                        <span class="produto__price">$90.000</span>
+                    </div>
+                    <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
+                </li>
+            </ul>
+            <ul class="listado3">
+                <li>
+                    <img src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}" class="producto__img">
+                    <div class="productDescription">
+                        <h3 class="produto__title">Producto 1</h3>
+                        <span class="produto__price">$90.000</span>
+                    </div>
+                    <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
+                </li>
+                <li>
+                    <img src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}" class="producto__img">
+                    <div class="productDescription">
+                        <h3 class="produto__title">Producto 1</h3>
+                        <span class="produto__price">$90.000</span>
+                    </div>
+                    <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
+                </li>
+                <li>
+                    <img src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}" alt="Producto 1"
+                        class="producto__img">
+                    <div class="productDescription">
+                        <h3 class="produto__title">Producto 1</h3>
+                        <span class="produto__price">$90.000</span>
+                    </div>
+                    <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
+                </li>
+                <li>
+                    <img src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}" alt="Producto 1"
+                        class="producto__img">
+                    <div class="productDescription">
+                        <h3 class="produto__title">Producto 1</h3>
+                        <span class="produto__price">$90.000</span>
+                    </div>
+                    <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
+                </li>
+            </ul>
+            <ul class="listado3">
+                <li>
+                    <img src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}" class="producto__img">
+                    <div class="productDescription">
+                        <h3 class="produto__title">Producto 1</h3>
+                        <span class="produto__price">$90.000</span>
+                    </div>
+                    <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
+                </li>
+                <li>
+                    <img src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}" class="producto__img">
+                    <div class="productDescription">
+                        <h3 class="produto__title">Producto 1</h3>
+                        <span class="produto__price">$90.000</span>
+                    </div>
+                    <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
+                </li>
+                <li>
+                    <img src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}" alt="Producto 1"
+                        class="producto__img">
+                    <div class="productDescription">
+                        <h3 class="produto__title">Producto 1</h3>
+                        <span class="produto__price">$90.00</span>
+                    </div>
+                    <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
+                </li>
+                <li>
+                    <img src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}" alt="Producto 1"
+                        class="producto__img">
+                    <div class="productDescription">
+                        <h3 class="produto__title">Producto 1</h3>
+                        <span class="produto__price">$90.00</span>
+                    </div>
+                    <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <footer class="footer1">
+        <div>
+            <h1>Páginas</h1>
+            <div>
+                <a href="">Inicio</a>
+                <a href="">Sobre Nosotros</a>
+            </div>
+        </div>
+        <div>
+            <h1>Información</h1>
+            <div>
+                <p>Teléfono: +1 (555) 123-4567</p>
+                <p>Email: info@example.com</p>
+            </div>
+        </div>
+        <div>
+            <h1>Copyright</h1>
+            <div>
+                <h1>© 2024 Nombre de la Empresa. Todos los derechos reservados.</h1>
+            </div>
+        </div>
+    </footer>
+</body>
 
 </html>
