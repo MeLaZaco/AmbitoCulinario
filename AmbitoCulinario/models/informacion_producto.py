@@ -32,7 +32,14 @@ class informacion_producto:
             friends.append( cls(friend) )
         return friends
     
-    
+    @classmethod
+    def get_all_filter(cls, search_term):
+        query = f"SELECT * FROM informacio_producto WHERE nombre LIKE '%{search_term}%';"
+        results = connectToMySQL('ambitoculinario').query_db(query)
+        productitos = []
+        for result in results:
+            productitos.append(cls(result))
+        return productitos
 #buscador
     #@classmethod
     #def get_all_filter(cls, search_team):

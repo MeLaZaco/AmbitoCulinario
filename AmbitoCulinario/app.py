@@ -5,13 +5,13 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def index():
-    search = request.args.get('search') 
-    if search:
-        print("search parameter: " + search)
-        gatos = informacion_producto.get_all_filter(search)
-    else:
-        gatos = informacion_producto.get_all()
-    return render_template("index.html", gatos=gatos, search=search)
+    #search = request.args.get('search') 
+    #if search:
+       # print("search parameter: " + search)
+      #  gatos = informacion_producto.get_all_filter(search)
+   # else:
+      #  gatos = informacion_producto.get_all()
+    return render_template("index.html", informacion_producto=informacion_producto)
 
 @app.route('/', methods=['GET'])
 def producto():
