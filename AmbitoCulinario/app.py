@@ -8,9 +8,9 @@ def index():
     search = request.args.get('search') 
     if search:
         print("search parameter: " + search)
-        gatos = Gato.get_all_filter(search)
+        gatos = informacion_producto.get_all_filter(search)
     else:
-        gatos = Gato.get_all()
+        gatos = informacion_producto.get_all()
     return render_template("index.html", gatos=gatos, search=search)
 
 @app.route('/', methods=['GET'])
