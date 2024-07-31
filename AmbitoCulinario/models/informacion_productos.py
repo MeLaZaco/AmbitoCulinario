@@ -19,19 +19,25 @@ class Producto:
         self.dimension_producto = data["dimension_producto"]
         self.uso_producto = data["uso_producto"]
         self.garantia_producto = data["garantia_producto"]
-    # ahora usamos métodos de clase para consultar nuestra base de datos
+
     @classmethod
     def get_all(cls):
-        query = "SELECT * FROM informacion_productos;"
-        # asegúrate de llamar a la función connectToMySQL con el esquema al que te diriges
+        query = f"SELECT * FROM informacion_productos;"
         results = connectToMySQL('ambitoculinario').query_db(query)
-        # crear una lista vacía para agregar nuestras instancias de friends
         friends = []
-        # Iterar sobre los resultados de la base de datos y crear instancias de friends con cls
-        for friend in results:
-            friends.append( cls(friend) )
+        for result in results:
+            friends.append( cls(result) )
         return friends
     
+    @classmethod
+    def get_all_filter(cls, search_term):
+        query = f"SELECT * FROM informacion_productos WHERE nombre_producto LIKE '%{search_term}%';"
+        results = connectToMySQL('ambitoculinario').query_db(query)
+        productitos = []
+        for result in results:
+            productitos.append(cls(result))
+        return productitos
+
     @classmethod
     def get_producto(cls, id_informacion_producto):
         query = f"SELECT * FROM informacion_productos WHERE id_informacion_producto = " + id_informacion_producto + ";"
@@ -40,16 +46,3 @@ class Producto:
         for result in results:
             productitos.append(cls(result))
         return productitos
-
-    @classmethod
-    def get_all_filter(cls, search_term):
-        query = f"SELECT * FROM informacio_productos WHERE nombre LIKE '%{search_term}%';"
-        results = connectToMySQL('ambitoculinario').query_db(query)
-        productitos = []
-        for result in results:
-            productitos.append(cls(result))
-        return productitos
-#buscador
-    #@classmethod
-    #def get_all_filter(cls, search_team):
-        #query = f"select"
