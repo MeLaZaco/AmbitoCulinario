@@ -4,7 +4,7 @@ from config.db import connectToMySQL
 class Producto:
     def __init__( self , data ):
         self.id_informacion_producto = data["id_informacion_producto"]
-        self.imagen_producto = data["imagen_producto"]
+        self.imagen = data['imagen_producto']
         self.marca_producto = data["marca_producto"]
         self.nombre_producto = data["nombre_producto"]
         self.precio_producto = data["precio_producto"]
@@ -22,12 +22,23 @@ class Producto:
 
     @classmethod
     def get_all(cls):
+<<<<<<< HEAD
         query = f"SELECT * FROM informacion_productos;"
         results = connectToMySQL('ambitoculinario').query_db(query)
         productos = []
         for producto in results:
             productos.append( cls(producto) )
         return productos
+=======
+        query = "SELECT * FROM informacion_productos;"
+        results = connectToMySQL('ambitoculinario').query_db(query)
+        if not results:
+            return[]
+        friends = []
+        for friend in results:
+            friends.append( cls(friend) )
+        return friends
+>>>>>>> 3b4c7d3b3340353bb98fb5ad96fc355f22d93d07
     
     @classmethod
     def get_all_limit_all(cls, page = 1):
@@ -42,9 +53,21 @@ class Producto:
 
     @classmethod
     def get_producto(cls, id_informacion_producto):
-        query = f"SELECT * FROM informacion_productos WHERE id_informacion_producto = " + id_informacion_producto + ";"
+        query = f"SELECT imagen_producto FROM informacion_productos WHERE id_informacion_producto = " + id_informacion_producto + ";"
         results = connectToMySQL('ambitoculinario').query_db(query)
         productitos = []
         for result in results:
             productitos.append(cls(result))
         return productitos
+<<<<<<< HEAD
+=======
+
+    @classmethod
+    def get_all_filter(cls, search_term):
+        query = f"SELECT * FROM informacio_productos WHERE nombre LIKE '%{search_term}%';"
+        results = connectToMySQL('ambitoculinario').query_db(query)
+        productitos = []
+        for result in results:
+            productitos.append(cls(result))
+        return productitos
+>>>>>>> 3b4c7d3b3340353bb98fb5ad96fc355f22d93d07

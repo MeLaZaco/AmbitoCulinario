@@ -50,12 +50,20 @@
         </div>
         <div>
             <ul class="listado3">
+                {% for friend in friends%}
                 <li>
+<<<<<<< HEAD
                     <img src="{{url_for('static',filename='/imgs/peladorpapas.png')}}" class="producto__img">
                     <div class="productDescription">
                         <h3 class="produto__title"><a href="/AmbitoCulinario/templates/producto1.html">Pelador Horizontal Mango<br>Soft Gris Wurden</a>
                             1</a></h3>
                         <span class="produto__price">$ 4.990</span>
+=======
+                    <img src="{{url_for('static',filename='/imgs/' + friend.imagen)}}" class="producto__img" alt="">
+                    <div class="productDescription">
+                        <h3 class="produto__title"></a></h3>
+                        <span class="produto__price">$90.000</span>
+>>>>>>> 3b4c7d3b3340353bb98fb5ad96fc355f22d93d07
                     </div>
                     <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
                 </li>
@@ -122,6 +130,7 @@
                     </div>
                     <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
                 </li>
+                {% endfor %}
             </ul>
             <ul class="listado3">
                 <li>
