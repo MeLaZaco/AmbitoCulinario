@@ -22,23 +22,12 @@ class Producto:
 
     @classmethod
     def get_all(cls):
-<<<<<<< HEAD
         query = f"SELECT * FROM informacion_productos;"
         results = connectToMySQL('ambitoculinario').query_db(query)
         productos = []
         for producto in results:
             productos.append( cls(producto) )
         return productos
-=======
-        query = "SELECT * FROM informacion_productos;"
-        results = connectToMySQL('ambitoculinario').query_db(query)
-        if not results:
-            return[]
-        friends = []
-        for friend in results:
-            friends.append( cls(friend) )
-        return friends
->>>>>>> 3b4c7d3b3340353bb98fb5ad96fc355f22d93d07
     
     @classmethod
     def get_all_limit_all(cls, page = 1):
@@ -59,8 +48,6 @@ class Producto:
         for result in results:
             productitos.append(cls(result))
         return productitos
-<<<<<<< HEAD
-=======
 
     @classmethod
     def get_all_filter(cls, search_term):
@@ -70,4 +57,3 @@ class Producto:
         for result in results:
             productitos.append(cls(result))
         return productitos
->>>>>>> 3b4c7d3b3340353bb98fb5ad96fc355f22d93d07
