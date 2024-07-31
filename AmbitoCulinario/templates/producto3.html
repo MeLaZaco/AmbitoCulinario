@@ -17,7 +17,7 @@
                     <img class="fotito-superior"
                         src="{{ url_for('static',filename='/imgs/logo.png') }}">
                     <h1 class="titulo"><a
-                            href="/AmbitoCulinario/template/index.html">Ambito
+                            href="/">Ambito
                             Culinario</a></h1>
                 </div>
                 <div>
@@ -35,57 +35,67 @@
                         <li class="lista">
                             <p>Inicio</p>
                         </li>
-                        <li class="lista">
-                            <img src alt="carrito">
-                        </li>
                     </ul>
                 </div>
             </div>
             <div class="orden-img-info">
                 <div>
                     <img
-                        src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}">
+                        src="{{url_for('static',filename='/imgs/set11.png')}}">
                 </div>
                 <div class="informacion-producto">
                     <h1>
-                        Acme Prism T-Shirt
+                        GENERICO<br>Set 11 Utensilios De Cocina Antiadherentes De Silicona
                     </h1>
-                    <p class="porcentaje">
-                        60% combed ringspunasssssssssss
-                    </p>
                     <h3 class="precio">
-                        $69.000
+                         $ 10.990
                     </h3>
-                    <p class="informacion">
-                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                    </p>
                     <h3 class="especificaciones">
                         Especificaciones
                     </h3>
                     <div>
                         <ul>
                             <li>
-                                aaaaaaaaaaaaaa
+                                Condicion del producto	= Nuevo
                             </li>
                             <li>
-                                aaaaaaaaaaaaaaa
+                                Tipo = Otros utensilios
                             </li>
                             <li>
-                                aaaaaaaaaaaaaaaa
+                                Hecho en = China
                             </li>
                             <li>
-                                aaaaaaaaaaaaaaa
+                                Altura regulable
                             </li>
                             <li>
-                                aaaaaaaaaaaaaa
+                                Material: mango de madera.
+                            </li>
+                            <li>
+                                Tamaño de los utensilios: aprox. 31 x7 cm
+                            </li>
+                            <li>
+                                Tamaño del cubo: 12 x 16 cm.
+                            </li>
+                            <li>
+                                Set Utensilios cocina x 11
+                            </li>
+                            <li>
+                                Cubo porta utensilios x 1
+                            </li>
+                            <li>
+                                Fáciles de usar y lavar
+                            </li>
+                            <li>
+                                Diseño ergonómico
                             </li>
                         </ul>
                     </div>
                     <h3 class="I-A">
                         Informacion Adicional
                     </h3>
-                    <p class="informacion-adicional">
-                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 
+                    <p class="informacion">
+                        ¡Muchas gracias por su preferencia! Nuestro centro de despacho se encuentra en Chile. ¡Al recibir su pedido, se lo enviaremos inmediatamente! Es totalmente un gran gusto poder servirle! Saludos cordiales.
+                        CONDICIONES:**Garantía del Producto: 3 meses por defectos de fábrica. No cubre defectos ocasionados por mal uso del producto o productos intervenidos. Todas las devoluciones deben realizarse con su empaque original.**Shipping: Almacén en Chile, entrega rápida a tus manos.
                     </p>
                     <form>
                         <button class="Agregar-a-carrito" type="submit">Add to cart</button>
@@ -97,50 +107,40 @@
                     Productos Relacionados
                 </h1>
                 <div>
-                    <ul class="relacion-productos">
+                    <ul class="listado3">
                         <li>
-                            <img
-                                src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
-                                alt="Producto 1" class="producto__img">
+                            <img src="{{url_for('static',filename='/imgs/set11.png')}}" class="producto__img">
                             <div class="productDescription">
-                                <h3 class="produto__title">Producto 1</h3>
-                                <span class="produto__price">$90.000</span>
+                                <h3 class="produto__title"><a href="/AmbitoCulinario/templates/producto1.html">Set 11 Utensilios De<br>Cocina Antiadherentes <br>De Silicona</a></h3>
+                                <span class="produto__price">$ 10.990</span>
                             </div>
-                            <a href="#"><i
-                                    class="produto__icon fas fa-cart-plus"></i></a>
+                            <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
                         </li>
                         <li>
-                            <img
-                                src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
-                                alt="Producto 1" class="producto__img">
-                            <div class="productDescription">
-                                <h3 class="produto__title">Producto 1</h3>
-                                <span class="produto__price">$90.000</span>
-                            </div>
-                            <a href="#"><i
-                                    class="produto__icon fas fa-cart-plus"></i></a>
+                            <img src="{{url_for('static',filename='/imgs/peladorpapas.png')}}" class="producto__img">
+                    <div class="productDescription">
+                        <h3 class="produto__title"><a href="/AmbitoCulinario/templates/producto1.html">Pelador Horizontal Mango<br>Soft Gris Wurden</a>
+                            1</a></h3>
+                        <span class="produto__price">$ 4.990</span>
+                    </div>
                         </li>
                         <li>
-                            <img
-                                src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
-                                alt="Producto 1" class="producto__img">
+                            <img src="{{url_for('static',filename='/imgs/exprimidorlimones.png')}}" alt="Producto 1"
+                                class="producto__img">
                             <div class="productDescription">
-                                <h3 class="produto__title">Producto 1</h3>
-                                <span class="produto__price">$90.000</span>
+                                <h3 class="produto__title"><a href="/AmbitoCulinario/templates/producto2.html">Exprimidor Limones<br>Gris Wurden</a></h3>
+                                <span class="produto__price">$$3.990</span>
                             </div>
-                            <a href="#"><i
-                                    class="produto__icon fas fa-cart-plus"></i></a>
+                            <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
                         </li>
                         <li>
-                            <img
-                                src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
-                                alt="Producto 1" class="producto__img">
-                            <div class="productDescription">
-                                <h3 class="produto__title">Producto 1</h3>
-                                <span class="produto__price">$90.000</span>
-                            </div>
-                            <a href="#"><i
-                                    class="produto__icon fas fa-cart-plus"></i></a>
+                            <img src="{{url_for('static',filename='/imgs/micautensilios.png')}}" alt="Producto 1"
+                        class="producto__img">
+                    <div class="productDescription">
+                        <h3 class="produto__title"><a href="/AmbitoCulinario/templates/producto.html">Utensilios de Cocina<br>Silicona Cherry 6 Piezas Mica</a></h3>
+                        <span class="produto__price">$ 7.990</span>
+                    </div>
+                    <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
                         </li>
                     </ul>
                 </div>

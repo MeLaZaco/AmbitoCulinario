@@ -17,7 +17,7 @@
                     <img class="fotito-superior"
                         src="{{ url_for('static',filename='/imgs/logo.png') }}">
                     <h1 class="titulo"><a
-                            href="/AmbitoCulinario/template/index.html">Ambito
+                            href="/">Ambito
                             Culinario</a></h1>
                 </div>
                 <div>
@@ -28,56 +28,49 @@
                                     class="buscador"
                                     placeholder="  Buscar Productos...">
                             </form>
-                        </li>
-                        <li class="lista">
-                            <p>Registro</p>
-                        </li>
-                        <li class="lista">
-                            <p>Inicio</p>
-                        </li>
-                        <li class="lista">
-                            <img src alt="carrito">
-                        </li>
                     </ul>
                 </div>
             </div>
             <div class="orden-img-info">
                 <div>
                     <img
-                        src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}">
+                        src="{{url_for('static',filename='/imgs/micautensilios.png')}}">
                 </div>
                 <div class="informacion-producto">
                     <h1>
-                        Acme Prism T-Shirt
+                        MICA<br>Utensilios de Cocina Silicona Cherry 6 Piezas Mica
                     </h1>
-                    <p class="porcentaje">
-                        60% combed ringspunasssssssssss
-                    </p>
                     <h3 class="precio">
-                        $69.000
+                        $ 7.990
                     </h3>
-                    <p class="informacion">
-                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                    </p>
                     <h3 class="especificaciones">
                         Especificaciones
                     </h3>
                     <div>
                         <ul>
-                            <li>
-                                aaaaaaaaaaaaaa
+                            <li>       
+                                Condicion del producto = Nuevo
                             </li>
                             <li>
-                                aaaaaaaaaaaaaaa
+                                Modelo = BQ. UTENSILIOS
+                            </li>
+                            <li>                        
+                                Material = Madera
+                            </li>
+                            <li>  
+                                Tipo de utensilio de cocina = Set de utensilios
                             </li>
                             <li>
-                                aaaaaaaaaaaaaaaa
+                                Material del mango = Silicona
                             </li>
                             <li>
-                                aaaaaaaaaaaaaaa
+                                Uso = Diario
                             </li>
                             <li>
-                                aaaaaaaaaaaaaa
+                                Garantía del proveedor = 3 meses
+                            </li>
+                            <li>
+                                Temporada = Toda temporada
                             </li>
                         </ul>
                     </div>
@@ -85,7 +78,7 @@
                         Informacion Adicional
                     </h3>
                     <p class="informacion-adicional">
-                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 
+                        null 
                     </p>
                     <form>
                         <button class="Agregar-a-carrito" type="submit">Add to cart</button>
@@ -97,50 +90,41 @@
                     Productos Relacionados
                 </h1>
                 <div>
-                    <ul class="relacion-productos">
+                    <ul class="listado3">
                         <li>
-                            <img
-                                src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
-                                alt="Producto 1" class="producto__img">
+                            <img src="{{url_for('static',filename='/imgs/set11.png')}}" class="producto__img">
                             <div class="productDescription">
-                                <h3 class="produto__title">Producto 1</h3>
-                                <span class="produto__price">$90.000</span>
+                                <h3 class="produto__title"><a href="/AmbitoCulinario/templates/producto1.html">Set 11 Utensilios De<br>Cocina Antiadherentes <br>De Silicona</a></h3>
+                                <span class="produto__price">$ 10.990</span>
                             </div>
-                            <a href="#"><i
-                                    class="produto__icon fas fa-cart-plus"></i></a>
+                            <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
                         </li>
                         <li>
-                            <img
-                                src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
-                                alt="Producto 1" class="producto__img">
-                            <div class="productDescription">
-                                <h3 class="produto__title">Producto 1</h3>
-                                <span class="produto__price">$90.000</span>
-                            </div>
-                            <a href="#"><i
-                                    class="produto__icon fas fa-cart-plus"></i></a>
+                            <img src="{{url_for('static',filename='/imgs/peladorpapas.png')}}" class="producto__img">
+                    <div class="productDescription">
+                        <h3 class="produto__title"><a href="/AmbitoCulinario/templates/producto1.html">Pelador Horizontal Mango<br>Soft Gris Wurden</a>
+                            1</a></h3>
+                        <span class="produto__price">$ 4.990</span>
+                    </div>
+                            <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
                         </li>
                         <li>
-                            <img
-                                src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
-                                alt="Producto 1" class="producto__img">
+                            <img src="{{url_for('static',filename='/imgs/exprimidorlimones.png')}}" alt="Producto 1"
+                                class="producto__img">
                             <div class="productDescription">
-                                <h3 class="produto__title">Producto 1</h3>
-                                <span class="produto__price">$90.000</span>
+                                <h3 class="produto__title"><a href="/AmbitoCulinario/templates/producto2.html">Exprimidor Limones<br>Gris Wurden</a></h3>
+                                <span class="produto__price">$$3.990</span>
                             </div>
-                            <a href="#"><i
-                                    class="produto__icon fas fa-cart-plus"></i></a>
+                            <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
                         </li>
                         <li>
-                            <img
-                                src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
-                                alt="Producto 1" class="producto__img">
-                            <div class="productDescription">
-                                <h3 class="produto__title">Producto 1</h3>
-                                <span class="produto__price">$90.000</span>
-                            </div>
-                            <a href="#"><i
-                                    class="produto__icon fas fa-cart-plus"></i></a>
+                            <img src="{{url_for('static',filename='/imgs/micautensilios.png')}}" alt="Producto 1"
+                        class="producto__img">
+                    <div class="productDescription">
+                        <h3 class="produto__title"><a href="/AmbitoCulinario/templates/producto.html">Utensilios de Cocina<br>Silicona Cherry 6 Piezas Mica</a></h3>
+                        <span class="produto__price">$ 7.990</span>
+                    </div>
+                    <a href="#"><i class="produto__icon fas fa-cart-plus"></i></a>
                         </li>
                     </ul>
                 </div>
