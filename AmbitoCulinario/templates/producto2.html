@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"
+            href="{{url_for('static',filename='/css/style.css')}}">
+        <script src="{{ url_for('static',filename='/js/app.js') }}"></script>
+    </head>
+
+    <body class="body2">
+        <nav class="parte-superior">
+            <div class="superior-top">
+                <div class="IT">
+                    <img class="fotito-superior"
+                        src="{{ url_for('static',filename='/imgs/logo.png') }}">
+                    <h1 class="titulo"><a
+                            href="/AmbitoCulinario/template/index.html">Ambito
+                            Culinario</a></h1>
+                </div>
+                <div>
+                    <ul class="listado-superior">
+                        <li class="lista">
+                            <form>
+                                <input type="search" id="gsearch" name="gsearch"
+                                    class="buscador"
+                                    placeholder="  Buscar Productos...">
+                            </form>
+                        </li>
+                        <li class="lista">
+                            <p>Registro</p>
+                        </li>
+                        <li class="lista">
+                            <p>Inicio</p>
+                        </li>
+                        <li class="lista">
+                            <img src alt="carrito">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="orden-img-info">
+                <div>
+                    <img
+                        src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}">
+                </div>
+                <div class="informacion-producto">
+                    <h1>
+                        Acme Prism T-Shirt
+                    </h1>
+                    <p class="porcentaje">
+                        60% combed ringspunasssssssssss
+                    </p>
+                    <h3 class="precio">
+                        $69.000
+                    </h3>
+                    <p class="informacion">
+                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    </p>
+                    <h3 class="especificaciones">
+                        Especificaciones
+                    </h3>
+                    <div>
+                        <ul>
+                            <li>
+                                aaaaaaaaaaaaaa
+                            </li>
+                            <li>
+                                aaaaaaaaaaaaaaa
+                            </li>
+                            <li>
+                                aaaaaaaaaaaaaaaa
+                            </li>
+                            <li>
+                                aaaaaaaaaaaaaaa
+                            </li>
+                            <li>
+                                aaaaaaaaaaaaaa
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="I-A">
+                        Informacion Adicional
+                    </h3>
+                    <p class="informacion-adicional">
+                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa 
+                    </p>
+                    <form>
+                        <button class="Agregar-a-carrito" type="submit">Add to cart</button>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <h1 class="P-R">
+                    Productos Relacionados
+                </h1>
+                <div>
+                    <ul class="relacion-productos">
+                        <li>
+                            <img
+                                src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
+                                alt="Producto 1" class="producto__img">
+                            <div class="productDescription">
+                                <h3 class="produto__title">Producto 1</h3>
+                                <span class="produto__price">$90.000</span>
+                            </div>
+                            <a href="#"><i
+                                    class="produto__icon fas fa-cart-plus"></i></a>
+                        </li>
+                        <li>
+                            <img
+                                src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
+                                alt="Producto 1" class="producto__img">
+                            <div class="productDescription">
+                                <h3 class="produto__title">Producto 1</h3>
+                                <span class="produto__price">$90.000</span>
+                            </div>
+                            <a href="#"><i
+                                    class="produto__icon fas fa-cart-plus"></i></a>
+                        </li>
+                        <li>
+                            <img
+                                src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
+                                alt="Producto 1" class="producto__img">
+                            <div class="productDescription">
+                                <h3 class="produto__title">Producto 1</h3>
+                                <span class="produto__price">$90.000</span>
+                            </div>
+                            <a href="#"><i
+                                    class="produto__icon fas fa-cart-plus"></i></a>
+                        </li>
+                        <li>
+                            <img
+                                src="{{url_for('static',filename='/imgs/imagenotfound.jpg')}}"
+                                alt="Producto 1" class="producto__img">
+                            <div class="productDescription">
+                                <h3 class="produto__title">Producto 1</h3>
+                                <span class="produto__price">$90.000</span>
+                            </div>
+                            <a href="#"><i
+                                    class="produto__icon fas fa-cart-plus"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <footer class="footer2">
+            <h1>sobre nosotros</h1>
+        </footer>
+    </body>
+
+</html>

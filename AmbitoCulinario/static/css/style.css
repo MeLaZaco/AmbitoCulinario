@@ -38,7 +38,7 @@ nav {
 }
 
 .superior-top {
-    display: inline-flex;
+    display: flex;
     width: 100%;
     justify-content: space-between;
 }
@@ -60,10 +60,23 @@ nav {
     cursor: pointer;
 }
 
+.formulario {
+    display: flex;
+}
+
 .lista {
     list-style: none;
-    display: inline-flex;
+    display: flex;
     margin-right: 1.65vw;
+}
+
+.listado-superior {
+    display: flex;
+}
+
+.lista img{
+    width: 10%;
+    margin: 0%;
 }
 
 .lista p {
@@ -107,6 +120,10 @@ nav {
     transition: transform 0.5s ease;
 }
 
+.produto__title a {
+    text-decoration: none;
+    color: white;
+}
 
 .carrusel-item {
     min-width: 100%;
@@ -116,6 +133,7 @@ nav {
 .carrusel-item img {
     width: 100%;
     display: block;
+    max-height: 700px;
 }
 
 .carrusel-control {
@@ -166,7 +184,7 @@ nav {
 }
 
 .producto__img {
-    width: 80%;
+    width: 12.5vw;
     max-width: 600px;
     border-radius: 5%;
 }   

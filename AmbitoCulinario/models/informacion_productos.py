@@ -24,19 +24,21 @@ class Producto:
     def get_all(cls):
         query = f"SELECT * FROM informacion_productos;"
         results = connectToMySQL('ambitoculinario').query_db(query)
-        friends = []
-        for result in results:
-            friends.append( cls(result) )
-        return friends
+        productos = []
+        for producto in results:
+            productos.append( cls(producto) )
+        return productos
     
     @classmethod
-    def get_all_filter(cls, search_term):
-        query = f"SELECT * FROM informacion_productos WHERE nombre_producto LIKE '%{search_term}%';"
+    def get_all_limit_all(cls, page = 1):
+        limit = 4
+        offset = (page - 1) * limit
+        query = f"SELECT * informacion_productos LIMIT {limit} OFFSET {offset};"
         results = connectToMySQL('ambitoculinario').query_db(query)
-        productitos = []
-        for result in results:
-            productitos.append(cls(result))
-        return productitos
+        productos = []
+        for producto in results:
+            productos.append(cls(producto))
+        return productos
 
     @classmethod
     def get_producto(cls, id_informacion_producto):
