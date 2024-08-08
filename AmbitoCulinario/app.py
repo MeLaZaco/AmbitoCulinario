@@ -8,7 +8,6 @@ def index():
     #productos = Producto.get_all_limit_all(1)
     return render_template("index.html") #productos=productos)
 
-<<<<<<< HEAD
 @app.route('/AmbitoCulinario/templates/producto.html', methods=['GET'])
 def Info():
     return render_template("producto.html")
@@ -36,12 +35,6 @@ def Info5():
 @app.route('/AmbitoCulinario/templates/producto1.html', methods=['GET'])
 def Info6():
     return render_template("producto1.html")
-=======
-@app.route('/', methods=['GET'])
-def producto(productoID):
-    producto = Producto.get_producto(productoID )
-    return render_template("index.html", producto=producto[0])
->>>>>>> 3b4c7d3b3340353bb98fb5ad96fc355f22d93d07
 
 @app.route('/producto.html/', methods=['GET'])
 def info():

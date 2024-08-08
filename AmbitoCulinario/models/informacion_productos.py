@@ -22,7 +22,7 @@ class Producto:
 
     @classmethod
     def get_all(cls):
-        query = f"SELECT * FROM informacion_productos;"
+        query = "SELECT * FROM informacion_productos;"
         results = connectToMySQL('ambitoculinario').query_db(query)
         productos = []
         for producto in results:
@@ -30,10 +30,8 @@ class Producto:
         return productos
     
     @classmethod
-    def get_all_limit_all(cls, page = 1):
-        limit = 4
-        offset = (page - 1) * limit
-        query = f"SELECT * informacion_productos LIMIT {limit} OFFSET {offset};"
+    def get_all_limit(cls):
+        query = f"SELECT * informacion_productos;"
         results = connectToMySQL('ambitoculinario').query_db(query)
         productos = []
         for producto in results:
